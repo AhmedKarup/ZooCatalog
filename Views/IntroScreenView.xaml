@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MauiApp12.ViewsModels"
+             xmlns:models="clr-namespace:MauiApp12.Models"
+             x:Class="MauiApp12.Views.IntroScreenView"
+             Shell.NavBarIsVisible="False"
+             x:DataType="viewModels:IntroScreenViewModel"
+             Title="IntroScreenView">
+
+    <AbsoluteLayout>
+        <CarouselView Position="{Binding Position}"
+                  IndicatorView="indicatorView" 
+                  HorizontalOptions="FillAndExpand" 
+                  VerticalOptions="FillAndExpand"
+                  Loop="False"                 
+                  ItemsSource="{Binding IntroScreen}"
+                  AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                  AbsoluteLayout.LayoutFlags="All">
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="models:IntroScreenModel">
+                    <AbsoluteLayout>
+                        <Image Source="{Binding IntroImage}" Aspect="AspectFill"
+                           AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                           AbsoluteLayout.LayoutFlags="All" />
+
+                        <Frame Padding="20"
+                           Margin="5,600,5,0"     
+                           VerticalOptions="End"
+                           BackgroundColor="#60FFFFFF"
+                           CornerRadius="20"
+                           AbsoluteLayout.LayoutBounds="0, 0.8, 1, 1.1"
+                           AbsoluteLayout.LayoutFlags="All">
+                            <VerticalStackLayout VerticalOptions="Start">
+                                <Label Text="{Binding IntroTitle}" FontSize="25" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="{Binding IntroDescription}" FontSize="20" TextColor="Black" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </AbsoluteLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <Frame HorizontalOptions="Center"
+           Padding="0"
+           CornerRadius="20"
+           HeightRequest="60" 
+           WidthRequest="240"
+           BackgroundColor="Orange"
+           AbsoluteLayout.LayoutBounds="0.5, 0.99, 0.2, 0.1"
+           AbsoluteLayout.LayoutFlags="All">
+            <Label Text="{Binding ButtonText}"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center">
+            </Label>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding NextCommand}" />
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <IndicatorView x:Name="indicatorView" 
+                       HorizontalOptions="Center"
+                   IndicatorSize="13"
+                   IndicatorColor="LightGray" 
+                   SelectedIndicatorColor="{x:StaticResource Primary}"
+                   AbsoluteLayout.LayoutBounds="0.5,0.67, 0.5, 0.05"
+                   AbsoluteLayout.LayoutFlags="All" />
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp12.Views.DashboardView"
+             xmlns:viewmodel="clr-namespace:MauiApp12.ViewsModels"
+             xmlns:model="clr-namespace:MauiApp12.Models"
+             x:DataType="viewmodel:DashboardViewModel"
+             Shell.NavBarIsVisible="False"
+             Title="DashboardView"
+             BackgroundColor="white">
+    
+    <Grid Margin="20,20,0,0" RowDefinitions=".1*,.0,1*,.15*,.45*,.1*">
+       <Grid Margin="350,0,1,0" ColumnDefinitions="*,*">
+          <VerticalStackLayout>
+              <Border Grid.Column="1"
+                    HeightRequest="75"
+                    HorizontalOptions="End"
+                    StrokeShape="RoundRectangle 80,80,80,80"
+                    WidthRequest="75">
+                  <Image
+                    Aspect="AspectFill"
+                    HeightRequest="100"
+                    HorizontalOptions="Center"
+                    Source="intro1.jpg"
+                    WidthRequest="100">
+                    
+                  </Image>
+                
+              </Border>
+            
+          </VerticalStackLayout>
+        
+        
+       </Grid>
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="Start">
+            <Label
+                FontSize="40"
+                Text="Welcome,"
+                />
+            <Label
+                FontSize="25"
+                Text="Enyoj your trip for today"
+                />
+
+
+        </VerticalStackLayout>
+        <CollectionView
+            Grid.Row="2"
+            ItemsSource="{Binding Categories}"
+            VerticalOptions="Center">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="10" Orientation="Horizontal"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate
+                    x:DataType="model:Category">
+                    <Grid ColumnDefinitions="Auto,Auto"
+                          HeightRequest="60"
+                          >
+                        <Label
+                            Grid.Column="1"
+                            Text="{Binding Name}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+
+        <Button
+            Grid.Row="3"
+            WidthRequest="100"
+        Text="CLICK ME"/>
+    </Grid>
+
+    
+</ContentPage>
