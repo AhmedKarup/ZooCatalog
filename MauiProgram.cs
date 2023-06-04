@@ -2,6 +2,7 @@
 using MauiApp12.ViewsModels;
 using Microsoft.Extensions.Logging;
 
+
 namespace MauiApp12;
 
 public static class MauiProgram
@@ -11,11 +12,13 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.ConfigureFonts(fonts =>
+            
+
+            .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-				fonts.AddFont("Nexa-ExtraLight.ttf", "NexaLight");
+				fonts.AddFont("BadScript-Regular.ttf", "BadScript");
                 fonts.AddFont("Nexa-Heavy.ttf", "NexaHeavy");
             });
 
@@ -26,8 +29,11 @@ public static class MauiProgram
 		builder.Services.AddSingleton<DashboardView>();
 		builder.Services.AddSingleton<DashboardViewModel>();
 
-		builder.Services.AddSingleton<DashboardView>();
-		builder.Services.AddSingleton<DashboardViewModel>();
+		builder.Services.AddSingleton<IntroScreenView>();
+		builder.Services.AddSingleton<IntroScreenViewModel>();
+
+		builder.Services.AddTransient<DetailView>();
+		builder.Services.AddTransient<DetailViewModel>();
 
 		return builder.Build();
 	}

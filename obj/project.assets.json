@@ -15530,6 +15530,15 @@
       }
     },
     "net7.0-ios16.1": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -15730,6 +15739,15 @@
       }
     },
     "net7.0-ios16.1/android-arm": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -15930,6 +15948,15 @@
       }
     },
     "net7.0-ios16.1/android-arm64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -16130,6 +16157,15 @@
       }
     },
     "net7.0-ios16.1/android-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -16330,6 +16366,15 @@
       }
     },
     "net7.0-ios16.1/android-x86": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -16530,6 +16575,15 @@
       }
     },
     "net7.0-ios16.1/iossimulator-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -16730,6 +16784,15 @@
       }
     },
     "net7.0-ios16.1/maccatalyst-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -16930,6 +16993,15 @@
       }
     },
     "net7.0-ios16.1/win10-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.0/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -17130,6 +17202,15 @@
       }
     },
     "net7.0-maccatalyst16.1": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -17330,6 +17411,15 @@
       }
     },
     "net7.0-maccatalyst16.1/android-arm": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -17530,6 +17620,15 @@
       }
     },
     "net7.0-maccatalyst16.1/android-arm64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -17730,6 +17829,15 @@
       }
     },
     "net7.0-maccatalyst16.1/android-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -17930,6 +18038,15 @@
       }
     },
     "net7.0-maccatalyst16.1/android-x86": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -18130,6 +18247,15 @@
       }
     },
     "net7.0-maccatalyst16.1/iossimulator-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -18330,6 +18456,15 @@
       }
     },
     "net7.0-maccatalyst16.1/maccatalyst-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -18530,6 +18665,15 @@
       }
     },
     "net7.0-maccatalyst16.1/win10-x64": {
+      "CardsView.Maui/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst15.4/PanCardView.dll": {}
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -21245,6 +21389,23 @@
     }
   },
   "libraries": {
+    "CardsView.Maui/0.0.2": {
+      "sha512": "FiWrmoReYbKg0u/CFJ9SrGfw4fJOUPYxAt6PCJfRcnbkCvfsG1sXvKntgVwYprNEkAzwb2lU+XfL65N4UZ7afg==",
+      "type": "package",
+      "path": "cardsview.maui/0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cardsview.maui.0.0.2.nupkg.sha512",
+        "cardsview.maui.nuspec",
+        "icon.png",
+        "lib/net7.0-android33.0/PanCardView.aar",
+        "lib/net7.0-android33.0/PanCardView.dll",
+        "lib/net7.0-android33.0/PanCardView.xml",
+        "lib/net7.0-ios16.0/PanCardView.dll",
+        "lib/net7.0-maccatalyst15.4/PanCardView.dll"
+      ]
+    },
     "CommunityToolkit.Mvvm/8.2.0": {
       "sha512": "F883u+B0AVUkRZS+VQBiZEJiqlGiiQhGA8Ejy1/Y8fl4ecBmSd+HYuDso0iiUhh+UxRDjp2aTQ7jGkuL2S4NrA==",
       "type": "package",
@@ -24529,6 +24690,7 @@
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0.1"
     ],
     "net7.0-ios16.1": [
+      "CardsView.Maui >= 0.0.2",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -24538,6 +24700,7 @@
       "Microsoft.Maui.Graphics >= 7.0.59"
     ],
     "net7.0-maccatalyst16.1": [
+      "CardsView.Maui >= 0.0.2",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -24742,6 +24905,10 @@
       "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
         "dependencies": {
+          "CardsView.Maui": {
+            "target": "Package",
+            "version": "[0.0.2, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"
@@ -24809,6 +24976,10 @@
       "net7.0-maccatalyst16.1": {
         "targetAlias": "net7.0-maccatalyst",
         "dependencies": {
+          "CardsView.Maui": {
+            "target": "Package",
+            "version": "[0.0.2, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"

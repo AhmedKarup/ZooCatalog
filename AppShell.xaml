@@ -7,12 +7,16 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
+        Title="IntroScreen"
         ContentTemplate="{DataTemplate local:IntroScreenView}"
-        Route="MainPage" />
+        Route="IntroScreen" />
     <ShellContent
-        Title="Home"
+        Title="DashboardView"
         ContentTemplate="{DataTemplate local:DashboardView}"
         Route="DashboardView" />
+    <ShellContent
+        Title="DetailView"
+        ContentTemplate="{DataTemplate local:DetailView}"
+        Route="DetailView" />
 
 </Shell>

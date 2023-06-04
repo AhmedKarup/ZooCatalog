@@ -10,10 +10,10 @@ namespace MauiApp12.Models
     {
         public string Image { get; set; }
         public string Name { get; set; }
-
         public Category(string image, string name) { 
             this.Image = image;
             this.Name = name;
         }
+        
     }
 }

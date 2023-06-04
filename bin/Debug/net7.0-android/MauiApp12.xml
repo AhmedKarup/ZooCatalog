@@ -4,5 +4,72 @@
         <name>MauiApp12</name>
     </assembly>
     <members>
+        <member name="T:MauiApp12.ViewsModels.DashboardViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.DashboardViewModel.Animal">
+            <inheritdoc cref="F:MauiApp12.ViewsModels.DashboardViewModel.animal"/>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.DashboardViewModel.SelectedCategory">
+            <inheritdoc cref="F:MauiApp12.ViewsModels.DashboardViewModel.selectedCategory"/>
+        </member>
+        <member name="T:MauiApp12.ViewsModels.DetailViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.DetailViewModel.Animal">
+            <inheritdoc cref="F:MauiApp12.ViewsModels.DetailViewModel.animal"/>
+        </member>
+        <member name="T:MauiApp12.ViewsModels.IntroScreenViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.IntroScreenViewModel.ButtonText">
+            <inheritdoc cref="F:MauiApp12.ViewsModels.IntroScreenViewModel.buttonText"/>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.IntroScreenViewModel.Position">
+            <inheritdoc cref="F:MauiApp12.ViewsModels.IntroScreenViewModel.position"/>
+        </member>
+        <member name="F:MauiApp12.ViewsModels.IntroScreenViewModel.nextCommand">
+            <summary>The backing field for <see cref="P:MauiApp12.ViewsModels.IntroScreenViewModel.NextCommand"/>.</summary>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.IntroScreenViewModel.NextCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MauiApp12.ViewsModels.IntroScreenViewModel.Next"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Animal">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Animal" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedCategory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedCategory" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ButtonText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ButtonText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Position">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Position" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Animal">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Animal" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedCategory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedCategory" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ButtonText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ButtonText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Position">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Position" generated properties.</summary>
+        </member>
     </members>
 </doc>

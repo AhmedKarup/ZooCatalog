@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace MauiApp12.ViewsModels
 {
-    public partial class BaseViewModel : INotifyPropertyChanged
-    {
+    public partial class BaseViewModel : ObservableObject
+    {/*
         protected bool SetProperty<T>(ref T backingStore, T value,
        [CallerMemberName] string propertyName = "",
        Action onChanged = null)
@@ -33,6 +34,8 @@ namespace MauiApp12.ViewsModels
 
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        #endregion
+        #endregion*/
+
+        public BaseViewModel() { }
     }
 }

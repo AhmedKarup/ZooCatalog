@@ -9,12 +9,14 @@
              Title="IntroScreenView">
 
     <AbsoluteLayout>
-        <CarouselView Position="{Binding Position}"
+        <CarouselView 
+            CurrentItemChanged="CarouselView_CurrentItemChanged"
                   IndicatorView="indicatorView" 
                   HorizontalOptions="FillAndExpand" 
                   VerticalOptions="FillAndExpand"
                   Loop="False"                 
                   ItemsSource="{Binding IntroScreen}"
+                  Position="{Binding Position, Mode=TwoWay}"
                   AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                   AbsoluteLayout.LayoutFlags="All">
             <CarouselView.ItemTemplate>
@@ -60,9 +62,12 @@
             </Frame.GestureRecognizers>
         </Frame>
 
-        <IndicatorView x:Name="indicatorView" 
+        <IndicatorView
+               
+            x:Name="indicatorView" 
                        HorizontalOptions="Center"
                    IndicatorSize="13"
+                   Position="{Binding Position}"
                    IndicatorColor="LightGray" 
                    SelectedIndicatorColor="{x:StaticResource Primary}"
                    AbsoluteLayout.LayoutBounds="0.5,0.67, 0.5, 0.05"

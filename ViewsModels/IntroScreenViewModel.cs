@@ -1,4 +1,6 @@
-﻿using MauiApp12.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using MauiApp12.Models;
 using MauiApp12.Views;
 using System;
 using System.Collections.Generic;
@@ -13,29 +15,12 @@ namespace MauiApp12.ViewsModels
     public partial class IntroScreenViewModel:BaseViewModel
     {
         #region Properties
-        private string _buttonText="Get started";
-        public string ButtonText
-        {
-            get => _buttonText;
-            set => SetProperty(ref _buttonText, value);
-            
-        }
-        private int _position;
-        public int Position
-        {
-            get => _position;
-            set => SetProperty(ref _position, value, onChanged: (() =>
-            {
-                if (value == IntroScreen.Count - 1)
-                {
-                    ButtonText = "Enyoj";
-                }
-                else
-                {
-                    ButtonText = "Get started";
-                }
-            }));
-        }
+
+        [ObservableProperty]
+        public string buttonText = "Next";
+
+        [ObservableProperty]
+        public int position = 0;
 
         public ObservableCollection<IntroScreenModel> IntroScreen { get; set; } = new ObservableCollection<IntroScreenModel>();
 
@@ -60,23 +45,27 @@ namespace MauiApp12.ViewsModels
             });
             IntroScreen.Add(new IntroScreenModel
             {
-                IntroTitle = "Naslov2",
-                IntroDescription = "Opis2",
+                IntroTitle = "Naslov3",
+                IntroDescription = "Opis3",
                 IntroImage = "intro3"
 
             });
         }
-        public ICommand NextCommand => new Command(async () =>
+
+        [RelayCommand]
+        public async void Next()
         {
-            if (Position >= IntroScreen.Count - 1)
+
+            if ((Position >= IntroScreen.Count - 1) && IntroScreen.Count>2)
             {
                 await AppShell.Current.GoToAsync($"//{nameof(DashboardView)}");
             }
             else
             {
-               Position += 1;
+                Position += 1;
+
             }
             
-        });
+        }
     }
 }

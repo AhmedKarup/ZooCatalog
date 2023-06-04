@@ -183,6 +183,10 @@
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
+            "CardsView.Maui": {
+              "target": "Package",
+              "version": "[0.0.2, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.0, )"
@@ -250,6 +254,10 @@
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
+            "CardsView.Maui": {
+              "target": "Package",
+              "version": "[0.0.2, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.0, )"

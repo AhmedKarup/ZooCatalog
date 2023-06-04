@@ -6,6 +6,7 @@ D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiAp
 D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiApp12.pdb
 D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri
 D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -295,6 +296,12 @@ D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resize
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\intro1.scale-100.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\intro2.scale-100.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\intro3.scale-100.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profilepic.scale-100.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profilepic2.scale-100.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profilepic3.scale-100.jpg
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiApp12.AssemblyInfoInputs.cache
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiApp12.AssemblyInfo.cs
@@ -322,11 +329,3 @@ D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualif
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\slika1.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\slika3.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\image.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tigar.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\intro1.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\intro2.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\intro3.scale-100.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profilepic.scale-100.jpg

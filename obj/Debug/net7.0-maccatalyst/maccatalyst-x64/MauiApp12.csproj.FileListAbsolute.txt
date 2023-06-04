@@ -1,6 +1,8 @@
 D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiApp12.runtimeconfig.json
 D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiApp12.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiApp12.pdb
+D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\PanCardView.dll
+D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\programiranje\MauiApp12\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -232,6 +234,12 @@ D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizeti
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\intro1.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\intro2.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\intro3.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\profilepic.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\profilepic2.jpg
+D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\profilepic3.jpg
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.stamp
@@ -257,11 +265,3 @@ D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refint\M
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiApp12.pdb
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiApp12.genruntimeconfig.cache
 D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\MauiApp12.dll
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\slika1.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\slika3.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\image.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tigar.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\intro1.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\intro2.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\intro3.jpg
-D:\programiranje\MauiApp12\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\profilepic.jpg

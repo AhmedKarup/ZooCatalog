@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp12.Views.DashboardV
 build_metadata.AdditionalFiles.TargetPath = Views\DashboardView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DashboardView.xaml
 
+[D:/programiranje/MauiApp12/Views/DetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp12.Views.DetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetailView.xaml
+
 [D:/programiranje/MauiApp12/Views/IntroScreenView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp12.Views.IntroScreenView.xaml

@@ -1,76 +1,185 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp12.Views.DashboardView"
+             x:Class="MauiApp12.Views.DashboardView"  
+           
              xmlns:viewmodel="clr-namespace:MauiApp12.ViewsModels"
-             xmlns:model="clr-namespace:MauiApp12.Models"
+             xmlns:model="clr-namespace:MauiApp12.Models" 
+             
              x:DataType="viewmodel:DashboardViewModel"
              Shell.NavBarIsVisible="False"
              Title="DashboardView"
-             BackgroundColor="white">
-    
-    <Grid Margin="20,20,0,0" RowDefinitions=".1*,.0,1*,.15*,.45*,.1*">
-       <Grid Margin="350,0,1,0" ColumnDefinitions="*,*">
-          <VerticalStackLayout>
-              <Border Grid.Column="1"
+             BackgroundColor="#101216">
+
+    <Grid Margin="0,0,0,0" RowDefinitions=".1*,.0,1*,.15*,.45*,.1*">
+        <Grid Margin="350,10,1,0" ColumnDefinitions="*,*">
+            <VerticalStackLayout>
+                <Border Grid.Column="1"
                     HeightRequest="75"
                     HorizontalOptions="End"
                     StrokeShape="RoundRectangle 80,80,80,80"
                     WidthRequest="75">
-                  <Image
+                    <Image
                     Aspect="AspectFill"
                     HeightRequest="100"
                     HorizontalOptions="Center"
                     Source="intro1.jpg"
-                    WidthRequest="100">
-                    
-                  </Image>
-                
-              </Border>
-            
-          </VerticalStackLayout>
-        
-        
-       </Grid>
-        <VerticalStackLayout Grid.Row="1" VerticalOptions="Start">
+                    WidthRequest="120">
+
+                    </Image>
+
+                </Border>
+
+            </VerticalStackLayout>
+
+
+        </Grid>
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="Start" Margin="20, 0,0,0">
             <Label
                 FontSize="40"
                 Text="Welcome,"
+                TextColor="white"
+                FontFamily="BadScript"
                 />
             <Label
                 FontSize="25"
                 Text="Enyoj your trip for today"
+                TextColor="white"
+                FontFamily="BadScript"
                 />
 
 
         </VerticalStackLayout>
         <CollectionView
+            x:Name="CategoryList"
+            SelectionChanged="CategoryList_SelectionChanged"
+            Margin="10,0,0,0"
             Grid.Row="2"
+            SelectionMode="Single"
             ItemsSource="{Binding Categories}"
+            SelectedItem="{Binding SelectedCategory, Mode=OneWayToSource}"
             VerticalOptions="Center">
             <CollectionView.ItemsLayout>
-                <LinearItemsLayout ItemSpacing="10" Orientation="Horizontal"/>
+                <LinearItemsLayout 
+                    ItemSpacing="10" 
+                    Orientation="Horizontal"
+                    
+                    />
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate
+                    
                     x:DataType="model:Category">
-                    <Grid ColumnDefinitions="Auto,Auto"
+                    <Grid ColumnDefinitions=".25*,.65*"
                           HeightRequest="60"
+                          WidthRequest="160"
                           >
+                        <RoundRectangle
+                            x:Name="SourceRect"
+                            Grid.ColumnSpan="2"
+                            CornerRadius="45"
+                            Fill="#ffcd853f"/>
+
+                        <Border
+                            Grid.RowSpan="2"
+                            Margin="5,0,0,0"
+                            HeightRequest="50"
+                            HorizontalOptions="Start"
+                            StrokeShape="RoundRectangle 80,80,80,80"
+                            StrokeThickness="0"
+                            WidthRequest="50">
+                            <Image HeightRequest="200" Source="{Binding Image}"/>
+
+                        </Border>
+
                         <Label
+                            x:Name="SourceText"
+                           HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="White"
                             Grid.Column="1"
                             Text="{Binding Name}"/>
+
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal"></VisualState>
+                                <VisualState Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="Transparent"></Setter>
+                                        <Setter TargetName="SourceText" Property="Label.FontAttributes" Value="Bold"/>
+                                        <Setter TargetName="SourceRect" Property="RoundRectangle.Stroke" Value="White"/>
+                                        <Setter TargetName="SourceRect" Property="RoundRectangle.StrokeThickness" Value="2"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
                     </Grid>
+
+
+
                 </DataTemplate>
+
             </CollectionView.ItemTemplate>
-            
+
+
+
         </CollectionView>
 
-        <Button
+        <CarouselView
+            x:Name="AnimalCarousel"
+            CurrentItem="{Binding Animal, Mode=TwoWay}"
             Grid.Row="3"
-            WidthRequest="100"
-        Text="CLICK ME"/>
+            Loop="False"
+            WidthRequest="350"
+            IsBounceEnabled="False"
+            HeightRequest="350"
+            ItemsSource="{Binding Animals}">
+            <CarouselView.ItemsLayout>
+                <LinearItemsLayout 
+                    ItemSpacing="15"
+                    Orientation="Horizontal" 
+                    SnapPointsAlignment="Center"
+                    SnapPointsType="MandatorySingle"
+                    />
+            </CarouselView.ItemsLayout>
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="model:Animal" >
+                    <Grid HorizontalOptions="FillAndExpand"
+                          
+                          >
+                        <Border
+                    StrokeShape="RoundRectangle 25,25,25,25"
+                    StrokeThickness="0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image
+                            Aspect="Fill"
+                            Source="{Binding Slike}" >
+
+
+                                </Image>
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="AnimalClicked"/>
+                                </Grid.GestureRecognizers>
+
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+
+
+
+
     </Grid>
 
-    
+
 </ContentPage>

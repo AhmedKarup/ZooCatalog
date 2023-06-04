@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "f1ZE0JiRtXkGWgJcEtVbjPH+weeuTyi60RVfHSisngmJPP5gI93jHEhz9Om5GTxIOYcRQyRIqELC3dMKp409Gg==",
+  "dgSpecHash": "EA8/CI5XhwiuIDMd1zAaWpkJnf7edP1SHwJzX/1lp6kAAlv65u4b8a8WP6VWE9fKSQ3zOUawz7vdwc6Q81GD2A==",
   "success": true,
   "projectFilePath": "D:\\programiranje\\MauiApp12\\MauiApp12.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DT User\\.nuget\\packages\\cardsview.maui\\0.0.2\\cardsview.maui.0.0.2.nupkg.sha512",
     "C:\\Users\\DT User\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\DT User\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\DT User\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

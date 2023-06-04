@@ -8050,16 +8050,16 @@ namespace MauiApp12
 			public const int ic_mtrl_chip_close_circle = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int image = 2131165322;
+			public const int intro1 = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int intro1 = 2131165323;
+			public const int intro2 = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int intro2 = 2131165324;
+			public const int intro3 = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int intro3 = 2131165325;
+			public const int lion1 = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
 			public const int m3_appbar_background = 2131165326;
@@ -8275,10 +8275,10 @@ namespace MauiApp12
 			public const int profilepic = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int slika1 = 2131165397;
+			public const int profilepic2 = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int slika3 = 2131165398;
+			public const int profilepic3 = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
 			public const int splash = 2131165399;
@@ -8287,13 +8287,10 @@ namespace MauiApp12
 			public const int test_level_drawable = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int tigar = 2131165401;
+			public const int tooltip_frame_dark = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int tooltip_frame_dark = 2131165402;
-			
-			// aapt resource value: 0x7F0700DB
-			public const int tooltip_frame_light = 2131165403;
+			public const int tooltip_frame_light = 2131165402;
 			
 			static Drawable()
 			{

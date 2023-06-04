@@ -4,9 +4,24 @@ namespace MauiApp12.Views;
 
 public partial class IntroScreenView : ContentPage
 {
-	public IntroScreenView()
+
+	private readonly IntroScreenViewModel _vm;
+	public IntroScreenView(IntroScreenViewModel vm)
 	{
 		InitializeComponent();
-		this.BindingContext = new IntroScreenViewModel();
+		BindingContext = vm;
+		_vm = vm;
 	}
+
+    private void CarouselView_CurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
+    {
+		if(_vm.Position == 2)
+		{
+			_vm.ButtonText = "Get started";
+		}
+		else
+		{
+			_vm.ButtonText = "Next";
+		}
+    }
 }

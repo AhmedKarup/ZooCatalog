@@ -10742,10 +10742,10 @@ public final class R {
     public static final int ic_mtrl_chip_checked_black=0x7f070087;
     public static final int ic_mtrl_chip_checked_circle=0x7f070088;
     public static final int ic_mtrl_chip_close_circle=0x7f070089;
-    public static final int image=0x7f07008a;
-    public static final int intro1=0x7f07008b;
-    public static final int intro2=0x7f07008c;
-    public static final int intro3=0x7f07008d;
+    public static final int intro1=0x7f07008a;
+    public static final int intro2=0x7f07008b;
+    public static final int intro3=0x7f07008c;
+    public static final int lion1=0x7f07008d;
     public static final int m3_appbar_background=0x7f07008e;
     public static final int m3_popupmenu_background_overlay=0x7f07008f;
     public static final int m3_radiobutton_ripple=0x7f070090;
@@ -10817,13 +10817,12 @@ public final class R {
     public static final int notification_tile_bg=0x7f0700d2;
     public static final int notify_panel_notification_icon_bg=0x7f0700d3;
     public static final int profilepic=0x7f0700d4;
-    public static final int slika1=0x7f0700d5;
-    public static final int slika3=0x7f0700d6;
+    public static final int profilepic2=0x7f0700d5;
+    public static final int profilepic3=0x7f0700d6;
     public static final int splash=0x7f0700d7;
     public static final int test_level_drawable=0x7f0700d8;
-    public static final int tigar=0x7f0700d9;
-    public static final int tooltip_frame_dark=0x7f0700da;
-    public static final int tooltip_frame_light=0x7f0700db;
+    public static final int tooltip_frame_dark=0x7f0700d9;
+    public static final int tooltip_frame_light=0x7f0700da;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

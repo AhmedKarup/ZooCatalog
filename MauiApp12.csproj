@@ -49,10 +49,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\BadScript-Regular.ttf" />
 	  <None Remove="Resources\Images\intro1.jpg" />
 	  <None Remove="Resources\Images\intro2.jpg" />
 	  <None Remove="Resources\Images\intro3.jpg" />
+	  <None Remove="Resources\Images\lion1.jpg" />
 	  <None Remove="Resources\Images\profilepic.jpg" />
+	  <None Remove="Resources\Images\profilepic2.jpg" />
+	  <None Remove="Resources\Images\profilepic3.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -68,9 +72,24 @@
 	  <MauiXaml Update="Views\DashboardView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\DetailView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\IntroScreenView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
+	  <PackageReference Include="CardsView.Maui">
+	    <Version>0.0.2</Version>
+	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-maccatalyst'">
+	  <PackageReference Include="CardsView.Maui">
+	    <Version>0.0.2</Version>
+	  </PackageReference>
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionMauiApp12HideInfoBar="True" /></VisualStudio></ProjectExtensions>
