@@ -50,18 +50,75 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\BadScript-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Merriweather-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Merriweather-Italic.ttf" />
+	  <None Remove="Resources\Fonts\Merriweather-Regular.ttf" />
+	  <None Remove="Resources\Images\all.jpg" />
+	  <None Remove="Resources\Images\bear1.jpg" />
+	  <None Remove="Resources\Images\bear2.jpg" />
+	  <None Remove="Resources\Images\bear3.jpg" />
+	  <None Remove="Resources\Images\bear4.jpg" />
+	  <None Remove="Resources\Images\bearlogo.jpg" />
+	  <None Remove="Resources\Images\bird1.jpg" />
+	  <None Remove="Resources\Images\bird2.jpg" />
+	  <None Remove="Resources\Images\bird3.jpg" />
+	  <None Remove="Resources\Images\bn.png" />
+	  <None Remove="Resources\Images\eagle1.jpg" />
+	  <None Remove="Resources\Images\eagle2.jpg" />
+	  <None Remove="Resources\Images\eagle3.jpg" />
+	  <None Remove="Resources\Images\elephant1.jpg" />
+	  <None Remove="Resources\Images\elephant2.jpg" />
+	  <None Remove="Resources\Images\elephant3.jpg" />
+	  <None Remove="Resources\Images\elephantlogo.jpg" />
+	  <None Remove="Resources\Images\gorilla1.jpg" />
+	  <None Remove="Resources\Images\gorilla2.jpg" />
+	  <None Remove="Resources\Images\gorillalogo.jpg" />
 	  <None Remove="Resources\Images\intro1.jpg" />
 	  <None Remove="Resources\Images\intro2.jpg" />
 	  <None Remove="Resources\Images\intro3.jpg" />
 	  <None Remove="Resources\Images\lion1.jpg" />
+	  <None Remove="Resources\Images\lion2.jpg" />
+	  <None Remove="Resources\Images\lion3.jpg" />
+	  <None Remove="Resources\Images\lizard1.jpg" />
+	  <None Remove="Resources\Images\lizard2.jpg" />
+	  <None Remove="Resources\Images\lizard3.jpg" />
+	  <None Remove="Resources\Images\lizard4.jpg" />
+	  <None Remove="Resources\Images\lizardlogo.jpg" />
+	  <None Remove="Resources\Images\monkey1.jpg" />
+	  <None Remove="Resources\Images\monkey2.jpg" />
+	  <None Remove="Resources\Images\monkey3.jpg" />
+	  <None Remove="Resources\Images\monkey4.jpg" />
+	  <None Remove="Resources\Images\monkeylogo.jpg" />
+	  <None Remove="Resources\Images\pin.png" />
 	  <None Remove="Resources\Images\profilepic.jpg" />
 	  <None Remove="Resources\Images\profilepic2.jpg" />
 	  <None Remove="Resources\Images\profilepic3.jpg" />
+	  <None Remove="Resources\Images\snake1.jpg" />
+	  <None Remove="Resources\Images\snake2.jpg" />
+	  <None Remove="Resources\Images\snake3.jpg" />
+	  <None Remove="Resources\Images\snake4.jpg" />
+	  <None Remove="Resources\Images\snakelogo.jpg" />
+	  <None Remove="Resources\Images\tiger1.jpg" />
+	  <None Remove="Resources\Images\tiger2.jpg" />
+	  <None Remove="Resources\Images\tiger3.jpg" />
+	  <None Remove="Resources\Images\tiger4.jpeg" />
+	  <None Remove="Resources\Images\tigerlogo.jpg" />
+	  <None Remove="Resources\Images\wolf1.jpg" />
+	  <None Remove="Resources\Images\wolf2.jpg" />
+	  <None Remove="Resources\Images\wolf3.jpg" />
+	  <None Remove="Resources\Images\wolf4.jpg" />
+	  <None Remove="Resources\Images\wolflogo.jpg" />
+	  <None Remove="Resources\Images\zebra1.jpg" />
+	  <None Remove="Resources\Images\zebra2.jpg" />
+	  <None Remove="Resources\Images\zebra3.jpg" />
+	  <None Remove="Resources\Images\zebralogo.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.86" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
 	</ItemGroup>
 
 	<ItemGroup>

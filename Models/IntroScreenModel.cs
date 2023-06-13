@@ -11,6 +11,8 @@ namespace MauiApp12.Models
         public string IntroTitle { get; set; }
         public string IntroImage { get; set; }
         public string IntroDescription { get; set;
+
+
         }
     }
     //Modeli podataka jedne zivotinje 

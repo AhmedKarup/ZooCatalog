@@ -6,47 +6,302 @@
              x:DataType="viewmodel:DetailViewModel"
              Title="DetailView"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="White">
+             BackgroundColor="#FFEEE8AA">
 
-    <Grid >
-        <VerticalStackLayout>
-            <Grid BackgroundColor="red">
-            <Border Grid.Row="1"
-                    StrokeShape="RoundRectangle 0,0,40,40"
-                    StrokeThickness="0"
-                    HeightRequest="350"
-                    
-                    >
-                    
-                <Image Source="{Binding Animal.Slike}"
-                       Aspect="AspectFill"
-                      />
+    <ScrollView>
+        <Grid>
 
-            </Border>
-        </Grid>
+            <VerticalStackLayout>
+                <Grid>
+                    <Border  Grid.Row="1" StrokeShape="RoundRectangle 0,0,40,40" StrokeThickness="0" HeightRequest="350">
+                        <Border.Shadow>
+                            <Shadow Brush="black"
+                                    Radius="40"
+                                    Offset="20,20"
+                                    Opacity="0.8"
+                                    />
+                        </Border.Shadow>
+                        <Grid>
 
-            <Grid BackgroundColor="Yellow"
-                  HeightRequest="60"
-                  WidthRequest="160"
-                  
-                  >
-                  
-            <Label 
-            Text="{Binding Animal.Naziv}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+                            <Image Source="{Binding Animal.Slike}" 
+                               Aspect="AspectFill"/>
+
+                            <Grid 
+                                Margin="10,10,0,0" 
+                                VerticalOptions="Start"
+                                HeightRequest="50"
+                                  HorizontalOptions="Start"
+                                  WidthRequest="50" >
+
+                                <Border BackgroundColor="#60ffffff" StrokeShape="RoundRectangle 20,20,20,20">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnBorderTapped"/>
+                                    </Border.GestureRecognizers>
+                                    <Image Source="bn.png"
+                                           HeightRequest="25">
+                                    </Image>
+                                </Border>
+                            </Grid>
+
+                            <Grid Background="#80FFFFFF" HeightRequest="70"
+                              VerticalOptions="End"
+>
+                                <Label Text="{Binding Animal.Naziv}" 
+                               FontFamily="desc1"
+                               FontSize="25" 
+                               Margin="20,0,0,35"
+                               HorizontalOptions="Start"
+                               VerticalOptions="End"
+                               TextColor="black"
+                               FontAttributes="Bold"/>
+                                <Image Source="pin.png"
+                                   Aspect="AspectFill"
+                                   Margin="15,0,0,15"
+                                   VerticalOptions="End"
+                                   HorizontalOptions="Start"
+                                   HeightRequest="20"></Image>
+                                <Label Text="{Binding Animal.Location}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               VerticalOptions="End"
+                               Margin="35,0,0,15"
+                               TextColor="black"
+                                       FontFamily="desc"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+
+
+                <FlexLayout Wrap="Wrap" AlignItems="Start"  Margin="0,20,0,0" HorizontalOptions="Center"  >
+
+
+                    <Border  HeightRequest="65" WidthRequest="100" StrokeShape="RoundRectangle 20,20,20,20" Margin="5,0,5,0" Background="#FF8FBC3F">
+                        <Border.Shadow>
+                            <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                        </Border.Shadow>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Margin="0,5,0,0"
+                                   FontFamily="desc1"
+                            Text="Distance"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               Grid.Row="0" />
+                            <Label Text="{Binding Animal.Distance}" 
+                                   FontFamily="desc2"
+                               Margin="0,0,0,5"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" 
+                               Grid.Row="1" />
+                        </Grid>
+                    </Border>
+
+
+                    <Border  HeightRequest="65" WidthRequest="100" StrokeShape="RoundRectangle 20,20,20,20" Margin="5,0,5,0" Background="#FF8FBC3F">
+                        <Border.Shadow>
+                            <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                        </Border.Shadow>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Margin="0,5,0,0"
+                                   FontFamily="desc1"
+                            Text="Population"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               Grid.Row="0" />
+                            <Label Text="{Binding Animal.Population}" 
+                                   FontFamily="desc2"
+                               Margin="0,0,0,5"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" 
+                               Grid.Row="1" />
+                        </Grid>
+                    </Border>
+                    <Border  HeightRequest="65" WidthRequest="100" StrokeShape="RoundRectangle 20,20,20,20" Margin="5,0,5,0" Background="#FF8FBC3F" >
+                        <Border.Shadow>
+                            <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                        </Border.Shadow>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Margin="0,5,0,0"
+                                   FontFamily="desc1"
+                            Text="Rating"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               Grid.Row="0" 
+                                   />
+                            <Label Text="{Binding Animal.Rating}" 
+                                   FontFamily="desc2"
+                               Margin="0,0,0,5"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" 
+                               Grid.Row="1" />
+                        </Grid>
+                    </Border>
+
+
+                    <Border HeightRequest="65" WidthRequest="100" StrokeShape="RoundRectangle 20,20,20,20" Margin="5,5,5,0" Background="#FF8FBC3F">
+                        <Border.Shadow>
+                            <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                        </Border.Shadow>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Margin="0,5,0,0"
+                             FontFamily="desc1"
+                            Text="Height"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               Grid.Row="0" />
+                            <Label Text="{Binding Animal.Height}" 
+                                   FontFamily="desc2"
+                               Margin="0,0,0,5"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" 
+                               Grid.Row="1" />
+                        </Grid>
+                    </Border>
+                    <Border  HeightRequest="65" WidthRequest="100" StrokeShape="RoundRectangle 20,20,20,20" Margin="5,5,5,0" Background="#FF8FBC3F">
+                        
+                            <Border.Shadow>
+                                <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                            </Border.Shadow>
+                            <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Margin="0,5,0,0"
+                             FontFamily="desc1"      
+                            Text="Weight"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               Grid.Row="0" />
+                            <Label Text="{Binding Animal.Weight}"
+                                   FontFamily="desc2"
+                               Margin="0,0,0,5"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" 
+                               Grid.Row="1" />
+                        </Grid>
+                    </Border>
+                    <Border HeightRequest="65" WidthRequest="100" StrokeShape="RoundRectangle 20,20,20,20" Margin="5,5,5,0" Background="#FF8FBC3F">
+                        <Border.Shadow>
+                            <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                        </Border.Shadow>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Margin="0,5,0,0"
+                                   FontFamily="desc1"
+                            Text="Speed"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               Grid.Row="0" />
+                            <Label Text="{Binding Animal.Speed}" 
+                                   FontFamily="desc2"
+                               Margin="0,0,0,5"
+                               FontSize="17"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" 
+                               Grid.Row="1" />
+                        </Grid>
+                    </Border>
+
+
+                </FlexLayout>
+
+
+
+                <Grid  Margin="20,0,20,0">
+
+                    <Label
                 
-            </Grid>
-            <Grid BackgroundColor="orange">
-                <Label Text="{Binding Animal.Distance}"/>
-            </Grid>
-            
-            <Grid BackgroundColor="Blue">
-            <Label
-            Text="{Binding Animal.Opis}"/>
-            </Grid>
-        
+            Text="{Binding Animal.Opis}"
+                        FontFamily="desc1"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="0,25,0,0"
+                TextColor="black"/>
 
-        </VerticalStackLayout>
-    </Grid>
+                </Grid>
+
+                <Button x:Name="btnMap" Clicked="btnMap_Clicked" Text="Navigate"
+                        Background="#FF6B8E23" 
+                        HeightRequest="80" 
+                        WidthRequest="250"  
+                        FontSize="20"
+                        Margin="10,20,10,20"
+                        FontFamily="desc1">
+                    <Button.Shadow>
+                        <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                    </Button.Shadow>
+                </Button>
+
+
+
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
 </ContentPage>
+                  
+                  
+                  
+                    
+           
+            
+            

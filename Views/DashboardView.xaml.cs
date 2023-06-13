@@ -9,6 +9,8 @@ public partial class DashboardView : ContentPage
 {
     private readonly DashboardViewModel _viewModel;
 
+    
+
     public DashboardView(DashboardViewModel viewModel)
     {
         InitializeComponent();
@@ -32,7 +34,9 @@ public partial class DashboardView : ContentPage
 
     private void CategoryList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-
+        AnimalCarousel.Position = 0;
+        _viewModel.Animals.Clear();
+        _viewModel.Animal = _viewModel.AnimalsCopy.FirstOrDefault();
         Category category = _viewModel.SelectedCategory;
         if (category != null)
         {

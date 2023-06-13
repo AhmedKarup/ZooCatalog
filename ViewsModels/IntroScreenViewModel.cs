@@ -31,7 +31,7 @@ namespace MauiApp12.ViewsModels
             {
                 IntroTitle = "Dear animal lovers,We welcome you " +
                 "to the official app of Safari",
-                IntroDescription="Explore the largest zoo in Europe",
+                IntroDescription= "Explore the largest zoo in Europe,",
                 IntroImage= "intro1"
 
             });

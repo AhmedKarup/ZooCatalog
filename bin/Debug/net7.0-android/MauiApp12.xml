@@ -6,12 +6,19 @@
     <members>
         <member name="T:MauiApp12.ViewsModels.DashboardViewModel">
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:MauiApp12.ViewsModels.DashboardViewModel.Animal">
             <inheritdoc cref="F:MauiApp12.ViewsModels.DashboardViewModel.animal"/>
         </member>
         <member name="P:MauiApp12.ViewsModels.DashboardViewModel.SelectedCategory">
             <inheritdoc cref="F:MauiApp12.ViewsModels.DashboardViewModel.selectedCategory"/>
+        </member>
+        <member name="F:MauiApp12.ViewsModels.DashboardViewModel.changeCategorieCommand">
+            <summary>The backing field for <see cref="P:MauiApp12.ViewsModels.DashboardViewModel.ChangeCategorieCommand"/>.</summary>
+        </member>
+        <member name="P:MauiApp12.ViewsModels.DashboardViewModel.ChangeCategorieCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MauiApp12.ViewsModels.DashboardViewModel.ChangeCategorie"/>.</summary>
         </member>
         <member name="T:MauiApp12.ViewsModels.DetailViewModel">
             <inheritdoc/>

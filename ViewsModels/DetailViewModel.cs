@@ -14,7 +14,12 @@ namespace MauiApp12.ViewsModels
         [ObservableProperty]
         Animal animal;
 
-  
-        
+
+        IGeolocation geolocation;
+
+        public DetailViewModel(IGeolocation geolocation)
+        {
+            this.geolocation = geolocation;
+        }
     }
 }

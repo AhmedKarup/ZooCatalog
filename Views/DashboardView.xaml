@@ -9,7 +9,7 @@
              x:DataType="viewmodel:DashboardViewModel"
              Shell.NavBarIsVisible="False"
              Title="DashboardView"
-             BackgroundColor="#101216">
+             BackgroundColor="#FFEEE8AA">
 
     <Grid Margin="0,0,0,0" RowDefinitions=".1*,.0,1*,.15*,.45*,.1*">
         <Grid Margin="350,10,1,0" ColumnDefinitions="*,*">
@@ -19,6 +19,13 @@
                     HorizontalOptions="End"
                     StrokeShape="RoundRectangle 80,80,80,80"
                     WidthRequest="75">
+                    <Border.Shadow>
+                        <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                    </Border.Shadow>
                     <Image
                     Aspect="AspectFill"
                     HeightRequest="100"
@@ -38,14 +45,14 @@
             <Label
                 FontSize="40"
                 Text="Welcome,"
-                TextColor="white"
-                FontFamily="BadScript"
+                TextColor="Black"
+                FontFamily="desc1"
                 />
             <Label
                 FontSize="25"
                 Text="Enyoj your trip for today"
-                TextColor="white"
-                FontFamily="BadScript"
+                TextColor="black"
+                FontFamily="desc"
                 />
 
 
@@ -62,25 +69,26 @@
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout 
                     ItemSpacing="10" 
-                    Orientation="Horizontal"
-                    
-                    />
+                    Orientation="Horizontal"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate
                     
                     x:DataType="model:Category">
+                    
                     <Grid ColumnDefinitions=".25*,.65*"
                           HeightRequest="60"
-                          WidthRequest="160"
-                          >
+                          WidthRequest="160">
+                        
+
                         <RoundRectangle
                             x:Name="SourceRect"
                             Grid.ColumnSpan="2"
-                            CornerRadius="45"
-                            Fill="#ffcd853f"/>
+                            CornerRadius="25"
+                            Fill="#FF6B8E23"/>
 
                         <Border
+                            
                             Grid.RowSpan="2"
                             Margin="5,0,0,0"
                             HeightRequest="50"
@@ -88,7 +96,15 @@
                             StrokeShape="RoundRectangle 80,80,80,80"
                             StrokeThickness="0"
                             WidthRequest="50">
-                            <Image HeightRequest="200" Source="{Binding Image}"/>
+                            <Border.Shadow>
+                                <Shadow Brush="black"
+                                    Radius="30"
+                                    Offset="20,20"
+                                    Opacity="0.6"
+                                    />
+                            </Border.Shadow>
+
+                            <Image Aspect="AspectFill" Source="{Binding Image}"/>
 
                         </Border>
 
@@ -98,6 +114,7 @@
                             VerticalOptions="Center"
                             TextColor="White"
                             Grid.Column="1"
+                            FontFamily="desc"
                             Text="{Binding Name}"/>
 
 
@@ -108,7 +125,7 @@
                                     <VisualState.Setters>
                                         <Setter Property="BackgroundColor" Value="Transparent"></Setter>
                                         <Setter TargetName="SourceText" Property="Label.FontAttributes" Value="Bold"/>
-                                        <Setter TargetName="SourceRect" Property="RoundRectangle.Stroke" Value="White"/>
+                                        <Setter TargetName="SourceRect" Property="RoundRectangle.Stroke" Value="white"/>
                                         <Setter TargetName="SourceRect" Property="RoundRectangle.StrokeThickness" Value="2"/>
                                     </VisualState.Setters>
                                 </VisualState>
@@ -142,43 +159,50 @@
                     Orientation="Horizontal" 
                     SnapPointsAlignment="Center"
                     SnapPointsType="MandatorySingle"
+
                     />
             </CarouselView.ItemsLayout>
             <CarouselView.ItemTemplate>
-                <DataTemplate x:DataType="model:Animal" >
-                    <Grid HorizontalOptions="FillAndExpand"
-                          
-                          >
-                        <Border
+
+                <DataTemplate x:DataType="model:Animal">
+
+                    <Grid>
+                        <Border  
+                    Margin="5,5,5,5"
                     StrokeShape="RoundRectangle 25,25,25,25"
                     StrokeThickness="0">
+                        
+
                             <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Image
-                            Aspect="Fill"
-                            Source="{Binding Slike}" >
+                                <Image 
+                            Aspect="AspectFill"
+                            Source="{Binding Slike}"/>
 
 
-                                </Image>
+                            <Grid BackgroundColor="#40FFFFFF" 
+                                      HeightRequest="80"
+                                      VerticalOptions="End"
+                                      >
+                                    <Label Text="{Binding Naziv }" 
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="End"
+                                       Margin="0,0,0,20"
+                                       FontSize="30"
+                                       TextColor="Black"
+                                      FontFamily="desc"/>
+                                </Grid>
                                 <Grid.GestureRecognizers>
                                     <TapGestureRecognizer
                                         Tapped="AnimalClicked"/>
                                 </Grid.GestureRecognizers>
 
-
                             </Grid>
+
                         </Border>
-                    </Grid>
+                   </Grid>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
-
-
-
-
-
     </Grid>
 
 
